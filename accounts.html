@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="validation.js"></script>
+
+</head>
+
+<body>
+	<div class="container" id="reg">
+		<div class="navbar">
+			<div class="logo">
+				<img src="logo.png" width="125px" alt="logo">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Account</a></li>
+				</ul>
+
+
+			</nav>
+			<img src="cart.png" width="30px" height="=30px" alt="">
+			<img src="menu.png" class="menu-icon">
+		</div>
+	</div>
+	<!----account-page---->
+	<div id="login-box">
+		<div class="left-box">
+			<h1> Sign Up</h1>
+			<form name="registration" action="" onSubmit="return formValidation()">
+				<input type="text" name="f_name" id="f_name" placeholder="First Name" />
+				<input type="text" name="l_name" placeholder="Last Name" />
+				<input type="text" name="email" placeholder="Email" pattern="^(.+)@(.+)$" title="Email must be like name1@domain "/>
+				<input type="radio" id="male" name="gender" value="male">
+				<label for="male">Male</label>
+				<input type="radio" id="female" name="gender" value="female">
+				<label for="female">Female</label>
+				<br>
+				<br>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Phone number">
+
+				<h3>Date of Birth</h3> <input type="date" id="birthday" name="bday">
+				<input type="text" name="username" placeholder="Username" />
+				<input id="zip" name="zip" type="text" placeholder="zip" inputmode="numeric" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$">
+
+				<textarea rows="4" cols="50" name="Adress" form="registration">
+Enter Adress...</textarea>
+
+
+
+
+
+
+
+
+				<input type="password" name="password" placeholder="Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Must contain atleast one Special Character,one Uppercase letter,one Lower character,one special character and must 8 characters long" />
+				<input type="password" name="password2" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Must contain atleast one Special Character,one Uppercase letter,one Lower character,one special character and must 8 characters long" placeholder="Retype password" />
+
+				<input type="submit" name="submit" value="Sign Up" />
+
+			</form>
+
+			<h6>Already have an account</h6>
+			<a href="index.html">SignIn</a>
+
+		</div>
+
+	</div>
+
+
+
+	<!-----footer----->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="fcol-1">
+					<h3>
+						Download Our App
+					</h3>
+					<p>
+						Download App for Android or IOS.
+					</p>
+					<div class="applogo">
+						<img src="play-store.png" alt="">
+						<img src="app-store.png" alt="">
+					</div>
+				</div>
+				<div class="fcol-2">
+					<img src="logo-white.png" alt="">
+					<p>
+						A book shows your personality.
+					</p>
+				</div>
+				<div class="fcol-3">
+					<h3>
+						Useful Links
+					</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affliate</li>
+					</ul>
+				</div>
+				<div class="fcol-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+
+			</div>
+			<hr>
+			<p>
+			<p class="copyright">Copyright 2020</p>
+			</p>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

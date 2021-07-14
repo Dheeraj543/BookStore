@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="validation.js"></script>
+    <script src="scroll.js"></script>
+    <script src="signin.js"></script>
+    <!------top----->
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            color: red;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+            transition: background 0.5s;
+
+        }
+
+        #myBtn:hover {
+            color: black;
+            transform: translateY(-10px);
+        }
+
+    </style>
+    <!--------top-end------->
+</head>
+
+<body>
+   
+    <div class="header">
+        <div class="container">
+            <div class="navbar" id="navbar">
+                <div class="logo">
+                    <img src="logo.png" width="125px" alt="logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><button id="about" onclick="scroll6()" href="" style="color:chocolate;">About</button></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="accounts.html">Account</a></li>
+                        <li><button onclick="scroll5()">
+
+
+                                <i style="font-size: 50px;color: black;" class="fa fa-gift" aria-hidden="true"></i>
+                            </button>
+                        </li>
+
+                    </ul>
+
+
+                </nav>
+
+            </div>
+            <div class="row">
+                <div class="col-1">
+
+                    <button onclick="scroll1()" class="btn">Computers &#8594;</button>
+                    <br>
+                    <br><br>
+                    <button onclick="scroll2()" class="btn">Electronics &#8594;</button>
+                    <br><br><br>
+                    <button onclick="scroll3()" class="btn">Electrical &#8594;</button>
+                    <br>
+                    <br><br>
+                    <button onclick="scroll4()" class="btn">Bio-Tech &#8594;</button>
+                </div>
+                <div class="col-2" class="imgh">
+                    <img src="image1.jpg" alt="no" style="opacity:0.7;
+                    filter:alpha(opacity=50);">
+
+                </div>
+                <div class="col-2">
+                    <div class="left-box">
+                        <h1> Sign Up</h1>
+                        <form name="fsign" action="" onsubmit="return signin()">
+
+                            <input type="text" name="uname" placeholder="Username" />
+                            <input type="password" name="pwd" placeholder="Password" />
+                            <input type="submit" name="submit" value="Sign In" />
+
+                        </form>
+                        or <a class="regnow" href="accounts.html">Register Now!</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!---- catog ------>
+
+    <!--- products ---->
+
+    <!----offer---->
+    <div class="offer" id="view5">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="pro8.jpg" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>
+                        Exclusively Available on RedStore
+                    </p>
+                    <h1>Unity Game Development</h1>
+                    <small>Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Inc.'s Worldwide Developers Conference as a Mac OS X-exclusive game engine. As of 2018, the engine had been extended to support more than 25 platforms.<br></small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="small-container">
+        <h2 class="title" id="view1">Computer Science</h2>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="pro1.jpg" alt="">
+                <h3>Python</h3>
+                <h4>Author: Mark Lutz</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+
+                </div>
+                <p>$23</p>
+            </div>
+            <div class="col-4">
+                <img src="pro2.jpg" alt="">
+                <h3>Linux</h3>
+                <h4>Author: Darwin Growth</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>$17</p>
+            </div>
+            <div class="col-4">
+                <img src="pro3.jpg" alt="">
+                <h3>Java</h3>
+                <h4>Author: Herbert Schildt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                </div>
+                <p>$31</p>
+            </div>
+            <div class="col-4">
+                <img src="pro4.jpg" alt="">
+                <h3>Kotlin</h3>
+                <h4>Author: Leiva</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>$28</p>
+            </div>
+        </div>
+        <h2 class="title" id="view2">Electronics</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="proe.jpg" alt="">
+                <h3>Arduino</h3>
+                <h4>Author: Christiana Bagan</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>$34</p>
+            </div>
+            <div class="col-4">
+                <img src="pro5.jpg" alt="">
+                <h3>Circuit Deisign</h3>
+                <h4>Author: Gaul</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+
+                </div>
+                <p>$23</p>
+            </div>
+            <div class="col-4">
+                <img src="pro6.jpg" alt="">
+                <h3>Analogs</h3>
+                <h4>Author: Giovammi Saggin</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                </div>
+                <p>$31</p>
+            </div>
+            <div class="col-4">
+                <img src="pro7.jpg" alt="">
+                <h3>Quantum Optics</h3>
+                <h4>Author: F.J.Duarte</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                </div>
+                <p>$21</p>
+            </div>
+
+        </div>
+        <h2 class="title" id="view3">Electrical</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="proe2.jpg" alt="">
+                <h3>Waves</h3>
+                <h4>Author: Walter Fox</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+                </div>
+                <p>$34</p>
+            </div>
+            <div class="col-4">
+                <img src="pro52.jpg" alt="">
+                <h3>Quantum Simulation</h3>
+                <h4>Author: Viamontes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+
+                </div>
+                <p>$23</p>
+            </div>
+            <div class="col-4">
+                <img src="pro62.jpg" alt="">
+                <h3>Simulation</h3>
+                <h4>Author: Rizwan Wirk</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                </div>
+                <p>$31</p>
+            </div>
+            <div class="col-4">
+                <img src="pro72.jpg" alt="">
+                <h3>Quantum Approach</h3>
+                <h4>Author: Hidary</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                </div>
+                <p>$21</p>
+            </div>
+
+        </div>
+        <h2 class="title" id="view4">Bio_Technology</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="pro12.jpg" alt="">
+                <h3>Pharmaceutical</h3>
+                <h4>Author: Iliopoullos</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+
+                </div>
+                <p>$7</p>
+            </div>
+            <div class="col-4">
+                <img src="pro9.jpg" alt="">
+                <h3>Bacteria</h3>
+                <h4>Author: Wiley</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star"></i>
+
+                </div>
+                <p>$37</p>
+            </div>
+            <div class="col-4">
+                <img src="pro10.jpg" alt="">
+                <h3>Plant BioTechnology</h3>
+                <h4>Author: Jason Angstrom</h4>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+
+
+                <p>$43</p>
+            </div>
+            <div class="col-4">
+                <img src="pro11.jpg" alt="">
+                <h3>Valuation</h3>
+                <h4>Author: Iliopoullos</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+
+                </div>
+                <p>$17</p>
+            </div>
+
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+
+        </div>
+    </div>
+    <!----testimonial----->
+    <div class="test">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Great collection of books all types of books are available including school, novel, infomative books, self help and also school accessories.
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+
+                    </div>
+                    <img src="rev1.jpg" alt="">
+                    <h3>SK Raina</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        I liked this bookstore. It is in a very good place. The store itself is quite cozy, it has a large selection of books. There is also a fairly friendly staff.
+
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+
+                    </div>
+                    <img src="rev2.jpg" alt="">
+                    <h3>Ayan Sanger</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        Book reports offers general guidance book for more than 500 books of classic literature if you look for a quick and effective help with reading .
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+
+                    </div>
+                    <img src="rev3.jpg" alt="">
+                    <h3>Nairobi</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-----footer----->
+    <div class="footer" id="view6">
+        <div class="container">
+            <div class="row">
+                <div class="fcol-1">
+                    <h3>
+                        Download Our App
+                    </h3>
+                    <p>
+                        Download App for Android or IOS.
+                    </p>
+                    <div class="applogo">
+                        <img src="play-store.png" alt="">
+                        <img src="app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="fcol-2">
+                    <img src="logo-white.png" alt="">
+                    <p>
+                        A book shows your personality.
+                    </p>
+                </div>
+                <div class="fcol-3">
+                    <h3>
+                        Useful Links
+                    </h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+                <div class="fcol-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            
+            <p class="copyright">Copyright 2020</p>
+            
+
+        </div>
+    </div>
+
+
+
+    <!----goto top------>
+
+    <body>
+
+        <button onclick="topFunction()" id="myBtn" style="font-size: 75px;" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+
+        <div style="background-color:black;color:white;padding:30px">Scroll Down</div>
+        
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
+
+
+
+
+    </body>
+
+</html>
